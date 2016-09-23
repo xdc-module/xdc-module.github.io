@@ -1,0 +1,31 @@
+{
+  "name": "modelManage",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "ready": "",
+    "start": "",
+    "deploy": "gh-pages -d webroot-pro",
+    "release": "rm -r webroot-pro && coolie build webroot-dev && 7niu upload && git add webroot-pro && git commit -am 'release' && git push"
+  },
+  "preferGlobal": false,
+  "bin": {},
+  "main": "app.js",
+  "keywords": [],
+  "author": {
+    "name": "lzl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lzl852/modelManage"
+  },
+  "bugs": {},
+  "dependencies": {
+    "coolie.js": "^2.0.19"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.11.0"
+  },
+  "licenses": "MIT"
+}
